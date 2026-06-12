@@ -13,13 +13,10 @@ janela.configure(bg='grey')
 
 # DEF 
 def calcular_idade():
-    try:
         nome_usuario = ent_nome_usuario.get()
         idade_usuario = int(ent_idade_usuario.get())
         ano_atual = int(ent_ano_atual.get())
         idade_atual = (ano_atual - idade_usuario)
-
-    except ValueError:
         if nome_usuario == "" or idade_usuario == "" or ano_atual == "":
             messagebox.showwarning('Verificar Dados', 'Verificar os campos')
         else:
