@@ -347,8 +347,8 @@ from tkinter import messagebox, ttk
 
 def contagem_regressiva():
     for i in range (10, 0, -1):
-        messagebox.showinfo("Contagem regressiva" (i), "Prensa Ativada!")
-    # messagebox.showinfo("Contagem regressiva", 'Prensa Ativada!')
+        messagebox.showinfo("Contagem regressiva" , (i))
+    messagebox.showinfo("Contagem regressiva", 'Prensa Ativada!')
 
 janela = tk.Tk()
 janela.title('Contagem Regressiva de Setup')
