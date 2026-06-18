@@ -138,7 +138,11 @@ from tkinter import messagebox, ttk
 # ent_nota3 = tk.Entry(janela, font=('Arial', 12))
 # ent_nota3.grid(row=3, column=1, pady=20, padx=20)
 
-# btn_calcular_media = tk.Button(janela, text='Calcular média', width=28, height=3, bg='light grey', command=calcular_media)
+# <<<<<<< HEAD
+# # btn_calcular_media = tk.Button(janela, text='Calcular média', width=28, height=3, bg='light grey', command=calcular_media)
+# =======
+# # btn_calcular_media = tk.Button(janela, text='Calcular Média', width=28, height=3, bg='light grey', command=calcular_media)
+# >>>>>>> abeade64cad2981a6fe3ee9404b36ceb496986df
 # btn_calcular_media.grid(row=4, column=0, pady=20, padx=20)
 # btn_fechar = tk.Button(janela, text='Fechar aplicativo', width=28, height=3, bg='light grey', command=janela.destroy)
 # btn_fechar.grid(row=4, column=1, pady=20, padx=20)
@@ -341,22 +345,22 @@ from tkinter import messagebox, ttk
 
 # 10. Contagem Regressiva de Setup: Use um for para fazer uma contagem regressiva de 10 até 1 para o início de uma prensa, e finalize com "Prensa Ativada!".
 
+def contagem_regressiva():
+    for i in range (10, 0, -1):
+        messagebox.showinfo("Contagem regressiva" (i), "Prensa Ativada!")
+    # messagebox.showinfo("Contagem regressiva", 'Prensa Ativada!')
+
 janela = tk.Tk()
 janela.title('Contagem Regressiva de Setup')
 janela.geometry('600x500')
 janela.configure(bg='grey')
 
-def contagem_regressiva():
-    for i in range (10, 0, -1):
-        messagebox.showinfo("Contagem regressiva", (i))
-    messagebox.showinfo("Contagem regressiva", "Prensa Ativada!")
-
-lbl_titulo_aplicacao = tk.Label(janela, text=('Contagem Regresiva :)'), font=('Arial', 14), bg='grey', fg='black')
+lbl_titulo_aplicacao = tk.Label(janela, text=('Contagem regressiva :)'), font=('Arial', 14), bg='grey', fg='black')
 lbl_titulo_aplicacao.grid(row=0, column=0, pady=20, padx=20)
 
-btn_contagem_regressiva = tk.Button(janela, text='Contagem regressiva', width=28, height=3, bg='light grey', command=contagem_regressiva)
-btn_contagem_regressiva.grid(row=1, column=0, pady=20, padx=20)
+btn_contagem_regressiva = tk.Button(janela, text='Fazer contagem', width=28, height=3, bg='light grey', command=contagem_regressiva)
+btn_contagem_regressiva.grid(row=3, column=0, pady=20, padx=20)
 btn_fechar = tk.Button(janela, text='Fechar aplicativo', width=28, height=3, bg='light grey', command=janela.destroy)
-btn_fechar.grid(row=1, column=1, pady=20, padx=20)
+btn_fechar.grid(row=3, column=1, pady=20, padx=20)
 
 janela.mainloop()
